@@ -24,10 +24,10 @@ function App() {
   const totalCost = basketItems.reduce((total, item) => total + item.price, 0);
 
   return (
-
     <Router>
       <div className="App">
-        <h1>Cat Meow</h1>
+        <Navbar />
+        <h1>Cats Meow</h1>
         <Routes>
           <Route path="/" element={<CatList addToBasket={addToBasket} />} />
           <Route path="/basket" element={<Basket basketItems={basketItems} removeFromBasket={removeFromBasket} totalCost={totalCost} />} />
