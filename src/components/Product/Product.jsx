@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Product.css'; // CSS file for styling
 
-const CatList = ({ addToBasket }) => {
+const Product = ({ addToBasket }) => {
   const [cats, setCats] = useState([]);
 
   useEffect(() => {
@@ -38,4 +38,4 @@ const CatList = ({ addToBasket }) => {
   );
 };
 
-export default CatList;
+export default Product;
