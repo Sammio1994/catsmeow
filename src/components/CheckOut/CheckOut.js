@@ -13,7 +13,7 @@ function CheckOut(){
   )
 }
 checkoutButton.addEventListener(click,() => {
-  return`Yourpayment has gone through, your new friend will be the cats meow`
+  return`Your payment has gone through, your new friend or friends will be the cat's meow!`
 })  
 
 
