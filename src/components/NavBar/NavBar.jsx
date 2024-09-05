@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Style it in Navbar.css
+import './NavBar.css'; // Style it in Navbar.css
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
@@ -24,4 +23,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
