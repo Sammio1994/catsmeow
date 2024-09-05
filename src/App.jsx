@@ -31,7 +31,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Product addToBasket={addToBasket} />} />
           <Route path="/Basket" element={<Basket basketItems={basketItems} removeFromBasket={removeFromBasket} totalCost={totalCost} />} />
-          
           <Route path="/about" element={<About />} />
           <Route path="/Checkout" element={<CheckOut/> }/>
           <Route path="/contactus" element={<ContactUs/>}/>

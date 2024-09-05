@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Basket.css';
 
 const Basket = ({ basketItems, removeFromBasket, totalCost }) => {
@@ -20,6 +21,11 @@ const Basket = ({ basketItems, removeFromBasket, totalCost }) => {
         ))
       )}
       <h3>Total: £{totalCost}</h3>
+      {basketItems.length > 0 && (
+        <Link to="/checkout">
+          <button className="checkout-button">Proceed to Checkout</button>
+        </Link>
+      )}
     </div>
   );
 };
