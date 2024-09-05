@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.navBar { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 /* .logo {
