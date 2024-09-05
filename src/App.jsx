@@ -27,7 +27,6 @@ function App() {
 
     <Router>
       <div className="App">
-        <NavBar/>
         <h1>Cat Meow</h1>
         <Routes>
           <Route path="/" element={<CatList addToBasket={addToBasket} />} />
