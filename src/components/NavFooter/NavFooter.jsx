@@ -1,18 +1,18 @@
 import React from 'react';
-import './NavFooter.css';
+import './NavFooter.css'; // اگر فایل استایل دارید
 
 const NavFooter = () => {
   return (
-    <div className="nav-footer">
+    <footer className="nav-footer">
       <div className="nav-footer-item">
-        <img src="/images/cat1.jpg" alt="Cat Image 1" />
+        <img src="/image/cat1.jpg" alt="Buying the Cat" />
         <p>Buying the Cat</p>
       </div>
       <div className="nav-footer-item">
-        <img src="/images/cat2.jpg" alt="Cat Image 2" />
+        <img src="/images/adopting.jpg" alt="Adopting" />
         <p>Adopting</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
