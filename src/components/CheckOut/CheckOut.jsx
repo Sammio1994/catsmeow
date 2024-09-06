@@ -6,7 +6,9 @@ const Checkout = () => {
     <div className="checkout">
       <h2>Checkout</h2>
       <p>Thank you for your purchase! This is where the checkout process would take place.</p>
+    <button>checkoutButton</button>
     </div>
+    
   );
 };
 
