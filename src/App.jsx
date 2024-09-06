@@ -35,6 +35,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs/>}/>
         </Routes>
         <NavFooter/>
+        
       </div>
     </Router>
   );
