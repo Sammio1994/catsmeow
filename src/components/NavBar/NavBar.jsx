@@ -4,7 +4,7 @@ import './NavBar.css'; // Style it in Navbar.css
 import { FaBars, FaSearch, FaShoppingCart } from 'react-icons/fa'; // Add FontAwesome icons
 
 
-const NavBar = () => {
+const NavBar = ({ itemCount }) => { // دریافت تعداد آیتم‌ها از props
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -32,9 +32,10 @@ const NavBar = () => {
       </div>
       <div className="navbar-right">
         <FaSearch className="icon search-icon" />
-        <Link to="/basket">
-          <FaShoppingCart className="icon cart-icon" />
-        </Link>
+        <Link to="/basket" className="icon-container">
+  <FaShoppingCart className="icon cart-icon" />
+  {itemCount > 0 && <span className="cart-count">{itemCount}</span>}
+</Link>
       </div>
     </nav>
   );
