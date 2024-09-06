@@ -5,16 +5,36 @@
   text-align: center;
 }
 
-.navBar { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
+.navBar { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Footer Styling/Positioning */
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background-color: black;
+}
 
+/* Footer Text color/colour */
+footer p{
+  margin: 0;
+color: whitesmoke;}
 
-
+/* Irrelevant Code Shown Below (Template) */
 /* .logo {
   height: 6em;
   padding: 1.5em;

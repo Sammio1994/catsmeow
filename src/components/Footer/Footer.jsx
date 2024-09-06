@@ -7,3 +7,14 @@ export const Footer = () => {
 }
 
 export default Footer;
+
+//Danny's working on it (STILL)
+// function Footer() {
+//   return (
+//     <footer>
+//       <p>CatCompanyNFT's 2024</p>
+//     </footer>
+//   );
+// }
+
+// export default Footer;

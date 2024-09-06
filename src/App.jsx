@@ -8,7 +8,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 import Basket from './components/Basket/Basket';
 import About from './components/About/About';
 import Product from './components/Product/Product';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [basketItems, setBasketItems] = useState([]);
@@ -35,12 +35,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/Checkout" element={<CheckOut/> }/>
           <Route path="/contactus" element={<ContactUs/>}/>
- 
 
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;
