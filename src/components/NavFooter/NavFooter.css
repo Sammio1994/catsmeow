@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* این باعث می‌شود که محتوا فضای اصلی را بگیرد و NavFooter در پایین باقی بماند */
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  z-index: 40;
+}
+
+.nav-footer-item {
+  text-align: center;
+}
+
+.nav-footer-item img {
+  width: 100px; /* یا هر اندازه‌ای که مناسب است */
+  height: auto;
+}
+
+.nav-footer-item p {
+  margin-top: 0.5rem;
+}

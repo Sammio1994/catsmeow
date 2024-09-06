@@ -1,39 +1,119 @@
 .navbar {
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
-  }
-   
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-   
-  .navbar-logo {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-  }
-   
-  .navbar-menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-   
-  .navbar-menu li {
-    margin: 0 15px;
-  }
-   
-  .navbar-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-   
-  .navbar-menu a:hover {
-    text-decoration: underline;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Container for the left side (menu and logo) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  position: relative; /* Needed for absolute positioning of the dropdown menu */
+}
+
+/* Icon for the menu button */
+.menu-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* Style for the menu list */
+.menu-list {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Place it directly below the menu icon */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 200px; /* Adjust width as needed */
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Show the menu when it's open */
+.menu-list.show {
+  display: block;
+}
+
+/* Style for each item in the menu list */
+.menu-list .navbar-item {
+  margin: 0;
+}
+
+/* Style for navbar items */
+.navbar-item {
+  margin: 0 1rem;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  display: block; /* Ensure the entire area is clickable */
+  padding: 0.5rem 1rem;
+}
+
+/* Style for the right side (icons) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40rem;
+  position: relative;
+  overflow: visible;
+  flex: 1;
+  margin-left: auto;
   
+}
+
+/* Style for icons */
+.icon {
+  margin: 5;/* Space between icons */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px; /* Adjust based on your icon size */
+  right: -10px; /* Adjust based on your icon size */
+  background-color: red; /* Or any other color */
+  color: white;
+  border-radius: 50%;
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem; /* Adjust size */
+}
+.cart-count {
+  position: absolute;
+  top: -10px; /* Adjust positioning as needed */
+  right: -10px; /* Adjust positioning as needed */
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
