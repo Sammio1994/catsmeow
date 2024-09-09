@@ -1,7 +1,7 @@
 import React from 'react';
-import './Checkout.css'; // Add styling in Checkout.css
+import './CheckOut.css'; // Add styling in Checkout.css
 
-const Checkout = () => {
+const CheckOut = () => {
   return (
     <div className="checkout">
       <h1>Awesomeeeeeeeee!!!!!!.....</h1>
@@ -13,4 +13,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default CheckOut;
